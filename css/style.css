@@ -1,0 +1,442 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Audiowide", serif;
+}
+
+:root {
+    --main: #080D1F;
+}
+body{
+    overflow-x: hidden;
+}
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--main);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: cyan;    
+    border-radius: 5px;       
+  }
+  
+.main-bg-color {
+    background-color: var(--main);
+}
+.main-color {
+    color: var(--main);
+}
+
+.navbar {
+    border-bottom: white 1px solid;
+}
+.nav-item a {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; 
+    width: 0; 
+    height: 2px; 
+    background-color: cyan; 
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-item a:hover::after {
+    width: 100%; 
+}
+
+
+.fs-10 {
+    font-size: 10px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.active {
+    color: darkturquoise !important;
+}
+
+.home-intro {
+    background-image: url(../imgs/wallpaperflare.com_wallpaper.jpg);
+}
+
+.heading-text{
+    background-image: linear-gradient(black , #080D1F);
+}
+.carousel-item {
+    transition: transform 1s ;
+  }
+.layer{
+    background-color: rgba(0, 0, 0 , 0.5);
+    
+}
+.carousel-indicators{
+    width: 5%;
+    top: 15%;
+    left: 82%;
+
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    transition: all 0.5s !important;
+
+}
+.carousel-indicators button:hover{
+    background-color: white !important ;
+    scale: 1.2;
+    opacity: 1;
+}
+.head-icons{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.section-title i{
+    transition: all 1s;
+}
+.section-title:hover i{
+   border-color: #080D1F;
+   background-color: white;
+   color: #080D1F;
+}
+.key-icons{
+    border: 1px solid #080D1F;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.key-card{
+    border: 1px solid #080D1F;
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px 2px var(--main);
+    transition: all 0.8s;    
+}
+.key-card:hover{
+   color: white;
+   background-color: var(--main);
+   border-color: white;
+   box-shadow: 5px 10px 10px 2px grey;
+    scale: 1.1;
+}
+.key-card:hover .key-icons{
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+.technologies {
+    text-align: center;
+    background-color: var(--main);
+    color: white;
+    overflow: hidden;
+  }
+  
+  .tec-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .tec {
+    display: flex;
+    animation: slide-animation 15s linear infinite;
+  }
+  
+  .move {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .move img {
+    width: 80px;
+  }
+  
+  @keyframes slide-animation {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } 
+  }
+.use-card{
+    box-shadow: 5px 10px 10px 2px var(--main);
+    transition: all 1s;
+}
+.use-card img{
+    transition: all 1.5s;
+}
+.use-card:hover{
+    color: white;
+    background-color: var(--main);
+    border-color: white;
+    box-shadow: 5px 10px 10px 2px grey;
+     scale: 1.08;
+ }
+.use-card:hover h4{
+    color: white;
+ }
+.use-card:hover img{
+    scale: 1.2;
+    transform: rotate(5deg);
+ }
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        top: 10% !important;
+    }
+    .carousel-caption h2{
+        width: 100% !important;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .carousel-caption p, li{
+        width: 100% !important;
+        font-size: 16px;
+    }
+    .section-title{
+        font-size: 20px !important;
+        padding-bottom: 10px;
+        width: 50% !important;
+    }
+    .section-title i{
+        font-size: 20px !important;
+        padding: 8px 10px;
+    }
+    footer h4{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1125px) {
+    .carousel-caption {
+        top: 30% !important;
+    }
+    .carousel-caption h2{
+        width: 100% !important;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .carousel-caption p, li{
+        width: 100% !important;
+        font-size: 16px;
+    }
+    .section-title{
+        font-size: 20px !important;
+        padding-bottom: 10px;
+        width: 50% !important;
+    }
+    .section-title i{
+        font-size: 20px !important;
+        padding: 8px 10px;
+    }
+    footer h4{
+        font-size: 20px;
+    }
+}
+
+/* Tool style */
+.tool-body{
+    background-color: #000000;
+}
+.tool-bg{
+    background-image: url(../imgs/wallpaperflare.com_wallpaper.jpg);
+
+}
+.custom-upload {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.custom-upload input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+th, td {
+    border: 2px solid white; 
+    padding: 10px;
+}
+.tool-img {
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    max-width: 90%;
+    overflow: auto;
+}
+.tool-img.active {
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.tool-img canvas {
+    display: block;        /* Removes inline spacing */
+    max-width: 100%;       /* Scales to container width */
+    height: auto;          /* Keeps aspect ratio */
+}
+
+.tool-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* about style */
+h2:hover i {
+    animation: bounce 0.8s ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+.card-layer{
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    transform: translateX(1000px);
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 1s;
+}
+.about-card img{
+    height: 500px;
+    transition: all 1.5s;
+}
+.about-card:hover .card-layer{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.about-social{
+    width: 80%;
+    left: 10%;
+    top: 38%;
+    transition: all 0.5s ease-in-out 1s;
+    opacity: 0;
+}
+.about-card:hover .about-social{
+    opacity: 1;
+}
+.about-card:hover img{
+    scale: 1.2;
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.tool-body {
+    background: linear-gradient(270deg, #121212, #080D1F, #0f3460);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+}
+
+/* sign up  style */
+
+
+.signupSection {
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+  border-radius: 50px 50px 0 50px; 
+
+}
+
+.info {
+    width: 50%;
+    padding: 30px 0;
+    border-right: 5px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px); 
+    border-radius: 50px 0px 0 50px; 
+  }
+  .info i{
+    font-size: 100px;
+    transition: all 1s;
+  }
+.info i:hover{
+    color: cyan;
+}
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: var(--main);
+  transition: .2s;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid cyan;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+#join-btn {
+  border: 1px solid cyan;
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: all 1s;
+}
+#join-btn:hover{
+    background-color: rgb(16, 224, 224);
+    color: white !important;
+    padding: 10px 100px;
+}
+
+
+
+ 
+  

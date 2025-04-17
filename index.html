@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoLens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!----------Navbar----------->
+
+  <nav class="navbar navbar-expand-lg bg-transparent  position-fixed top-0 start-0 end-0 z-3 ">
+    <div class="container-fluid d-sm-flex justify-content-sm-center d-flex justify-content-center">
+
+      <div>
+        <a class="navbar-brand text-white fs-28" href="#"><img src="imgs/logo.png"
+            alt="website logo a mouse and a satellite" class="logo-img">GeoLens</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white me-md-5 fs-5" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white me-md-5 fs-5" href="tool.html">Tool</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white me-md-5 fs-5" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white me-md-5 fs-5" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!---------Home (Hero Section)----------->
+
+  <header class="vh-100 home-intro d-flex justify-content-center align-items-center" id="home">
+    <div id="particles-js" class="position-absolute top-0 bottom-0 start-0 end-0"></div>
+
+    <div class="back text-center border-bottom">
+      <div class="p-md-5">
+        <span class="text-white mb-4 mb-md-5 fs-4" id="welcome"></span>
+        <h1 class="text-white my-4 m-md-5 fs-50 fa-2xl "> <span id="element"></span></h1>
+        <span class=" text-white my-3 fs-5" id="desc"></span>
+      </div>
+    </div>
+  </header>
+
+  <!------Slider-------->
+
+  <section class="container-fluid d-flex flex-column justify-content-center align-items-center px-0 " id="about">
+    <div class="heading-text w-100 text-center d-flex justify-content-center py-5 border-bottom-0">
+      <h2 class="text-white py-md-3 border-bottom section-title"><i
+          class="fa-solid fa-info head-icons px-md-3 py-md-2 me-md-2"></i> About The Tool</h2>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide position-relative overflow-hidden" data-bs-ride="carousel"
+      data-bs-interval="3000" data-bs-wrap="true">
+      <div class="carousel-indicators position-absolute d-flex flex-column">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item position-relative  active">
+          <img src="imgs/slider/earth2.jpg" class="d-block w-100" alt="photo for the earth from space">
+          <div class="layer position-absolute top-0 bottom-0 start-0 end-0"></div>
+          <div class="carousel-caption k position-absolute text-start top-50">
+            <h2 class="pb-md-4 border-bottom w-50"><i class="fa-regular fa-circle fa-2xs"></i> What is GeoLens ?</h2>
+            <p class="fs-20 pt-md-3">GeoLens is an AI-powered tool designed for rapid and efficient annotation of
+              satellite images. With a single click, users can label key attributes, creating high-quality datasets for
+              further AI model training.</p>
+            <a href="tool.html" class="btn btn-outline-info rounded-5 py-md-3 px-md-5 mt-md-3">Try Now</a>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="imgs/slider/sat2.jpg" class="d-block w-100" alt="photo of a satellite">
+          <div class="layer position-absolute top-0 bottom-0 start-0 end-0"></div>
+          <div class="carousel-caption  position-absolute text-start top-50">
+            <h2 class="pb-md-4 w-50 border-bottom w-50"><i class="fa-solid fa-bars fa-xs"></i> Key Features</h2>
+            <ul class="fs-20 pt-md-3">
+              <li>AI-Driven Annotation: Automate the image labeling process with AI.</li>
+              <li>One-Click Attribute Labeling: No need for manual annotation.</li>
+              <li>Exportable Data: Seamlessly integrate annotations into external AI models.</li>
+              <li>User-Friendly GUI: Designed for ease of use and efficiency.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="imgs/slider/sate.jpg" class="d-block w-100" alt="photo of a satellite and earth">
+          <div class="layer position-absolute top-0 bottom-0 start-0 end-0"></div>
+          <div class="carousel-caption  position-absolute text-start top-50">
+            <h2 class="pb-md-4 w-25 border-bottom"><i class="fa-regular fa-user fa-sm"></i> Use Cases</h2>
+            <ul class="fs-20 pt-md-3">
+              <li>Smart city planning</li>
+              <li>Environmental monitoring</li>
+              <li>Disaster management</li>
+              <li>Land use classification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------Key Features Section-------->
+
+  <section id="key-features">
+    <div class="heading-text w-100 text-center d-flex justify-content-center py-5 border-bottom-0">
+        <h2 class="text-white py-3 border-bottom section-title">
+            <i class="fa-solid fa-bars head-icons px-3 py-2 me-2"></i> Key Features
+        </h2>
+    </div>
+    <div class="container-fluid py-md-5">
+        <div class="row d-xl-flex justify-content-xl-center">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 col-xl-3 col-xxl-2">
+                <div class="d-flex justify-content-center align-items-center py-5 h-100">
+                    <div class="key-card d-flex flex-column justify-content-center align-items-center p-5 text-center h-100">
+                        <i class="fa-solid fa-arrow-pointer key-icons main-color px-4 py-3 mb-2"></i>
+                        <h4>One-Click Annotation</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 col-xl-3 col-xxl-2">
+                <div class="d-flex justify-content-center align-items-center py-5 h-100">
+                    <div class="key-card d-flex flex-column justify-content-center align-items-center p-5 text-center h-100">
+                        <i class="fa-solid fa-tag key-icons main-color px-4 py-3 mb-2"></i>
+                        <h4>Attribute Labeling</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 col-xl-3 col-xxl-2">
+                <div class="d-flex justify-content-center align-items-center py-5 h-100">
+                    <div class="key-card d-flex flex-column justify-content-center align-items-center p-5 text-center h-100">
+                        <i class="fa-brands fa-android key-icons main-color px-4 py-3 mb-2"></i>
+                        <h4>Integration with AI</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 col-xl-3 col-xxl-2">
+                <div class="d-flex justify-content-center align-items-center py-5 h-100">
+                    <div class="key-card d-flex flex-column justify-content-center align-items-center p-5 text-center h-100">
+                        <i class="fa-solid fa-display key-icons main-color px-4 py-3 mb-2"></i>
+                        <h4>User-Friendly GUI</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 col-xl-3 col-xxl-2">
+                <div class="d-flex justify-content-center align-items-center py-5 h-100">
+                    <div class="key-card d-flex flex-column justify-content-center align-items-center p-5 text-center h-100">
+                        <i class="fa-solid fa-gauge-simple-high key-icons main-color px-4 py-3 mb-2"></i>
+                        <h4>Fast and Efficient</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 col-xl-3 col-xxl-2">
+                <div class="d-flex justify-content-center align-items-center py-5 h-100">
+                    <div class="key-card d-flex flex-column justify-content-center align-items-center p-5 text-center h-100">
+                        <i class="fa-solid fa-file-export key-icons main-color px-4 py-3 mb-2"></i>
+                        <h4>Exportable Data Format</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!---------Technologies Section------------>
+
+  <section class="technologies pb-5" id="tech">
+    <div class="heading-text text-center py-5 d-flex justify-content-center">
+      <h2 class="section-title border-bottom w-50 py-3">
+        <i class="fa-solid fa-code head-icons px-3 py-2 me-2"></i> Technologies Used
+      </h2>
+    </div>
+
+    <div class="tec-container py-5">
+      <div class="tec">
+        <div class="move"><img src="imgs/tech slider/html.png" alt="Html logo">
+          <p>Html - Frontend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/css3.svg" alt="css logo">
+          <p>Css - Frontend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/js.png" alt="js logo">
+          <p>Js - Frontend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/flask.png" alt="Flask">
+          <p>Flask - Backend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/opencv.png" alt="OpenCV">
+          <p>OpenCV - Image Processing</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/Python.svg.png" alt="python">
+          <p>Python - AI</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/django-icon.svg" alt="django">
+          <p>Django - Backend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/html.png" alt="Html logo">
+          <p>Html - Frontend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/css3.svg" alt="css logo">
+          <p>Css - Frontend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/js.png" alt="js logo">
+          <p>Js - Frontend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/flask.png" alt="Flask">
+          <p>Flask - Backend</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/opencv.png" alt="OpenCV">
+          <p>OpenCV - Image Processing</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/Python.svg.png" alt="python">
+          <p>Python - AI</p>
+        </div>
+        <div class="move"><img src="imgs/tech slider/django-icon.svg" alt="django">
+          <p>Django - Backend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--------Use Cases---------->
+  <section id="use-cases">
+    <div class="heading-text text-center py-5 d-flex justify-content-center">
+      <h2 class="section-title border-bottom w-25 py-3 text-white">
+        <i class="fa-solid fa-earth head-icons px-3 py-2 me-2"></i> Use Cases
+      </h2>
+    </div>
+    <div class="container py-5 ">
+      <div class="row py-5 d-flex justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card pb-4 use-card overflow-hidden">
+            <img src="imgs/use cases/urban planning.jpg" class="card-img-top" alt="urban planning">
+            <div class="card-body py-4">
+              <h4 class="border-bottom py-3 main-color"><i class="fa-solid fa-layer-group"></i> Urban Planning</h4>
+              <p class="card-text">AI-powered satellite image annotation helps urban planners analyze infrastructure,
+                and population density. By detecting land use patterns , city officials can optimize public transport,
+                allocate resources, and plan smarter cities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card pb-4 use-card overflow-hidden">
+            <img src="imgs/use cases/enviroment.webp" class="card-img-top" alt="urban planning">
+            <div class="card-body py-4">
+              <h4 class="border-bottom py-3 main-color"><i class="fa-solid fa-leaf"></i> Environmental Monitoring</h4>
+              <p class="card-text">With AI-assisted image annotation, researchers can track deforestation, pollution
+                levels, and climate change effects over time. This allows for early detection of environmental hazards
+                like illegal logging, melting ice caps, and air pollution.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 ">
+          <div class="card pb-4 use-card overflow-hidden">
+            <img src="imgs/use cases/agri.jpg" class="card-img-top" alt="urban planning">
+            <div class="card-body py-4">
+              <h4 class="border-bottom py-3 main-color"><i class="fa-solid fa-tractor"></i> Agriculture & Land Use
+                Analysis</h4>
+              <p class="card-text">Farmers and agricultural researchers can monitor crop health, detect irrigation
+                issues, and analyze soil conditions using annotated satellite images. AI models can classify different
+                vegetation types, estimate yield, and detect pest infestations, improving food security and farm
+                productivity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----Footer------>
+
+  <footer class=" main-bg-color pt-5 text-white text-center">
+    <div class="container">
+      <div class="d-flex justify-content-around align-items-center">
+        <div class="m-3">
+          <h4 class="mb-2">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-decoration-none text-white">Home</a></li>
+            <li><a href="tool.html" class="text-decoration-none text-white">Tool</a></li>
+            <li><a href="about.html" class="text-decoration-none text-white">About Us</a></li>
+            <li><a href="login.html" class="text-decoration-none text-white">Login</a></li>
+            <li><a href="signup.html" class="text-decoration-none text-white">Sign up</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Undersupervison of</h4>
+          <p>EgSA: Egyptian Space Agency</p>
+          <p>Phone: 02 21297950</p>
+          <p>NU: Nile University</p>
+          <p>Phone: 16453</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <p>EgSA</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/company/egyptian-space-agency/posts/?feedView=all"><i
+                class="fa-brands fa-linkedin "></i></a>
+            <a
+              href="https://www.instagram.com/egsa_egyptianspaceagency/?locale=ingin%2Bmenarik%2Btabungan%2Bsecara%2Bonline%E3%80%90GB777.BET%E3%80%91.coqi&hl=en"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/EgSA.Egypt/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.egsa.gov.eg/"><i class="fa-solid fa-home"></i></a>
+          </div>
+          <p>Nile University</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/school/nile-university/posts/?feedView=all"><i
+                class="fa-brands fa-linkedin "></i></a>
+            <a href="https://www.instagram.com/nileuniversity.eg/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/NileUniversity/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.nu.edu.eg/"><i class="fa-solid fa-house"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom border-top py-3 mt-2">
+        <p>© 2025 GeoLens. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+<script src="js/particles.min.js"></script>
+<script src="js/typed.umd.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

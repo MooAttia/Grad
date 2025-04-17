@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="tool-body">
+
+    <!----------Navbar----------->
+
+    <nav class="navbar navbar-expand-lg bg-transparent ">
+        <div class="container-fluid d-sm-flex justify-content-sm-center d-flex justify-content-center">
+
+            <div>
+                <a class="navbar-brand text-white fs-28" href="index.html"><img src="imgs/logo.png"
+                        alt="website logo a mouse and a satellite" class="logo-img">GeoLens</a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-md-5 fs-5 active" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---form---->
+    <section class="py-5 z-">
+        <div class="container-fluid  text-center d-flex justify-content-center align-items-center py-5">
+
+            <div class="signupSection">
+                <div class="info d-flex flex-column justify-content-center px-3">
+                    <h2 class="pb-3">Unlock the Power of Satellite Imagery</h2>
+                    <i class="fa-solid fa-satellite py-3"></i>
+                    <p class="py-3">Simplify, Annotate, Innovate</p>
+                </div>
+                <form action="#" method="POST" class="signupForm d-flex flex-column justify-content-center" name="signupform">
+                    <h2><i class="fa-solid fa-unlock"></i> Login</h2>
+                    <ul class="list-unstyled p-0">
+                        <li>
+                            <label for="username"></label>
+                            <input type="text" class="inputFields" id="username" name="username" placeholder="Username"
+                                value="" required />
+                        </li>
+                        <li>
+                            <label for="password"></label>
+                            <input type="password" class="inputFields" id="password" name="password"
+                                placeholder="Password" value="" 
+                                required />
+                        </li>
+                        <li id="center-btn">
+                            <input type="submit" id="join-btn" name="join" alt="Join" value="Join" class="text-info">
+                        </li>
+                    </ul>
+                    <p class="pt-3">Do not have an account ? <a href="signup.html" class="text-info"> Sign Up</a> </p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+  
+    
+<!---footer---->
+
+    <footer class=" main-bg-color pt-5 text-white text-center">
+        <div class="container">
+            <div class="d-flex justify-content-around align-items-center">
+                <div class="m-3">
+                    <h4 class="mb-2">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="signup.html" class="text-decoration-none text-white">Sign up</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Undersupervison of</h4>
+                    <p>EgSA: Egyptian Space Agency</p>
+                    <p>Phone: 02 21297950</p>
+                    <p>NU: Nile University</p>
+                    <p>Phone: 16453</p>
+                </div>
+      
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>EgSA</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/egyptian-space-agency/posts/?feedView=all"><i class="fa-brands fa-linkedin "></i></a>
+                        <a href="https://www.instagram.com/egsa_egyptianspaceagency/?locale=ingin%2Bmenarik%2Btabungan%2Bsecara%2Bonline%E3%80%90GB777.BET%E3%80%91.coqi&hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/EgSA.Egypt/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.egsa.gov.eg/"><i class="fa-solid fa-home"></i></a>
+                    </div>
+                    <p>Nile University</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/school/nile-university/posts/?feedView=all"><i class="fa-brands fa-linkedin "></i></a>
+                        <a href="https://www.instagram.com/nileuniversity.eg/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/NileUniversity/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.nu.edu.eg/"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="footer-bottom border-top py-3 mt-2">
+                <p>© 2025 GeoLens. All Rights Reserved.</p>
+            </div>
+        </div>
+      </footer>
+      
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
