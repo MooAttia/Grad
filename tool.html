@@ -8,13 +8,18 @@
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="tool-body">
-
+<!-- Loading Spinner -->
+<div class="loading-indicator" style="display: none;">
+    <div class="spinner"></div> <!-- Customize this spinner with CSS -->
+  </div>
+  
     <!----------Navbar----------->
 
     <nav class="navbar navbar-expand-lg bg-black ">
@@ -181,8 +186,11 @@
     </footer>
 
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/geotiff"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tool.js"></script>
